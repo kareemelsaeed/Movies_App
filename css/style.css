@@ -1,0 +1,24 @@
+.main{
+    background-image: url('https://divedigital.vip/themes/g-stream/images/bg.jpg');
+    position: relative;
+}
+
+.main::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.911);
+}
+
+.overview {
+    font-size: 9px;
+    opacity: 0;
+    height: 100%;
+}
+.overview:hover{
+    opacity: 1;
+    transition: ease-in-out;
+}
