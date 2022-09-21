@@ -34,14 +34,18 @@ fetch(`https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_k
                     </div>
                 </div>
 
-                <div class="position-absolute bottom-0 start-0 text-light overview" style="width : 12.7rem; margin-left: .75rem;">
-                    <div class="position-absolute bottom-0 start-0 bg-secondary" >
-                        <div class="mx-3">
-                            <h6 class="mt-4 text-center">Overview</h6>
-                            <p>${e.overview}</p>
-                        </div>  
+                <a href="https://divedigital.vip/movie/${e.id}/${e.title}.html">
+                    <div class="position-absolute bottom-0 start-0 text-light overview" style="width : 12.7rem; margin-left: .75rem;">
+                        <div class="position-absolute bottom-0 start-0 bg-secondary" >
+                            <div class="mx-3">
+                                <h6 class="mt-4 text-center">Overview</h6>
+                                <p>${e.overview}</p>
+                            </div>  
+                        </div>
                     </div>
-                </div>
+                </a>
+
+
 
             </div>
 
@@ -80,15 +84,19 @@ fetch(`https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_k
                                 ${myVo > 7.9 ? (`<div class="text-success">${myVo}</div>`) : (`<div class="text-warning">${myVo}</div>`)}
                             </div>
                         </div>
-        
-                        <div class="position-absolute bottom-0 start-0 text-light overview" style="width : 12.7rem; margin-left: .75rem;">
-                            <div class="position-absolute bottom-0 start-0 bg-secondary" >
-                                <div class="mx-3">
-                                    <h6 class="mt-4 text-center">Overview</h6>
-                                    <p>${v.overview}</p>
-                                </div>  
+
+                        <a href="https://divedigital.vip/movie/${v.id}/${v.title}.html">
+                            <div class="position-absolute bottom-0 start-0 text-light overview" style="width : 12.7rem; margin-left: .75rem;">
+                                <div class="position-absolute bottom-0 start-0 bg-secondary" >
+                                    <div class="mx-3">
+                                        <h6 class="mt-4 text-center">Overview</h6>
+                                        <p>${v.overview}</p>
+                                    </div>  
+                                </div>
                             </div>
-                        </div>
+                        </a>
+
+
                     </div>
         
                 `
